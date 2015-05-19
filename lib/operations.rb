@@ -13,18 +13,14 @@ end
 
 
 def not_safe?(speed)
-
 	speed > 60 ? true : (speed < 40 ? true : false)
-
 end
-
 
 
 def sum_machine(first, second)
 	sum = 0
-	(first..second).each do |x|
-		sum += x
-		
+ 	(first..second).each do |x|
+ 		sum += x
 	end
-
+	return sum
 end
