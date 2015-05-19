@@ -18,9 +18,10 @@ end
 
 
 def sum_machine(first, second)
+	item = (first > second) ? (second..first) : (first..second)
 	sum = 0
- 	(first..second).each do |x|
+ 	item.each do |x|
  		sum += x
 	end
 	return sum
-end
+end 
