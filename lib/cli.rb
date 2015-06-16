@@ -5,7 +5,7 @@ require 'json'
 # this file
 
 METHODS = {
-  "unsafe?"     => { :arg => "number",          :ex => "unsafe?(95)"     },
+  "unsafe?"     => {:arg => "number",           :ex => "unsafe?(95)"     },
   "not_safe?"   => {:arg => "number",           :ex => "not_safe?(50)"   },
   "sum_machine" => {:arg => "number,number",    :ex => "sum_machine(4,6)"},
 }
@@ -50,7 +50,7 @@ def evaluate_user_input(user_input)
     puts "Goodbye!"
     exit
   else
-    puts"Method name not recognized."
+    puts "Method name not recognized."
   end
 end
 
